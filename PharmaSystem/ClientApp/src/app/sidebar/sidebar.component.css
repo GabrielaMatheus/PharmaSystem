@@ -1,0 +1,54 @@
+.sidebar-struct{
+    background-color: #283342;
+    height: 100%;
+    margin-left: -137px;
+}
+
+.sidebar-top{
+    background-color: #1D242E;
+    width: 256px;
+    height: 51px;
+}
+
+/* pharmasistem do topo */
+.sidebar-top-a-element{
+    color: white;
+    line-height: 48px;
+    font-weight: bold;
+    margin-left: 61px;
+
+}
+
+.sidebar-top-a-element:hover{
+    color: rgba(255, 255, 255, 0.794);
+    transition: 0.2s;
+    line-height: 48px;
+    font-weight: bold;
+    margin-left: 61px;
+    text-decoration: none;
+}
+
+
+
+.sidebar-ul-elements{
+    color:white;
+    list-style:none;
+    
+}
+.sidebar-ul-elements li{
+    margin: 25px 0px 25px 0px;
+    
+}
+
+/* elementos */
+.sidebar-ul-elements li a{
+    color: white;
+    
+}
+.sidebar-ul-elements li a:hover{
+    color: rgba(255, 255, 255, 0.794);
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+

@@ -1,0 +1,72 @@
+<body>
+  <div class="div-principal">
+
+   <app-sidebar></app-sidebar>
+
+    <div class="div-second">
+
+      <div class="div-label">
+        <div>
+           <label>PharmaSystem</label>
+        </div>        
+        <div style="margin-left: 50em;">          
+          <label> {{now}}</label>
+        </div>
+      </div>
+
+
+        <!-- conteúdo da página -->
+        <h3 class="h3-titulo">Cadastrar Cliente</h3>
+        <label class="label-campos-obrigatorios">Todos os campos são obrigatórios</label>
+        <br>
+        <br>
+        <form [formGroup]="ClientForm"> 
+
+        <div class="div-nome-e-id" >
+
+          
+          <div style="display: inline-grid;margin-right: 10px;">
+            <label >CPF</label>
+            <input formControlName="cpf" class="input" type="text" placeholder="000.000.000-00">
+          </div>
+
+          <div class="div-id" >
+            <label>Telefone</label>
+            <input formControlName="phone" class="input" type="text" placeholder="(00)0000-0000">
+          </div>
+
+        </div>
+
+
+
+        <div style="display: -webkit-box;margin-left: 30px; margin-top: 13px;padding-right: 13px;">
+          <div style="display: inline-grid;margin-right: 10px;">
+            <label >Primeiro Nome</label>
+            <input formControlName="firstName" class="input" type="text" placeholder="Insira o Primeiro Nome">
+          </div>
+
+          <div style="display: inline-grid;margin-right: 10px;padding-right: 13px;">
+            <label>Último Nome</label>
+            <input formControlName="lastName" class="input" type="text" placeholder="Insira o Último Nome">
+          </div>
+        </div>
+
+          <div style="display: inline-grid;margin:13px 10px 180px 30px;padding-right: 13px; ">
+            <label >Endereço</label>
+            <input formControlName="address" class="input-2-columns" type="text" placeholder="Insira o Endereço">
+          </div>
+
+        </form> 
+       
+
+        <div style="margin-left: 30px;margin-top: 13px;margin-bottom: 10em;">
+          <input type="submit" class="botão" value="Salvar">
+        </div>
+        <!--  -->
+  
+    
+  
+      </div>
+    </div>
+    </body>
+  

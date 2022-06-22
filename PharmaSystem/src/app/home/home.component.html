@@ -1,0 +1,23 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    
+      <h2>PharmaSystem</h2>
+
+    <!-- Login Form -->
+    <form style="margin-top: 2em;">
+      <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
+      <input type="password" id="password" class="fadeIn third" name="login" placeholder="password">
+      <input type="submit" class="fadeIn fourth" value="Entrar" [routerLink]="['/dashboard']">
+    </form>
+
+    <!-- Remind Password -->
+    <div id="formFooter">
+      <a class="underlineHover" [routerLink]="['#']" >Esqueceu a Senha?</a>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,73 @@
+<body>
+  <div class="div-principal">
+
+   <app-sidebar></app-sidebar>
+
+    <div class="div-second">
+
+      
+      <div class="div-label">
+        <div>
+           <label>PHARMASYSTEM</label>
+        </div>        
+        <div style="margin-left: 50em;">          
+          <label> {{now}}</label>
+        </div>
+      </div>
+
+        <!-- conteúdo da página -->
+        <h3 class="h3-titulo">{{editing ? 'Atualizar Medicamento' : 'Cadastrar Medicamento'  }}</h3> 
+        <label class="label-campos-obrigatorios">-Todos os campos são obrigatórios.</label>
+        <br>
+        <br>
+        <form [formGroup]="MedicineForm" (ngSubmit)="submitForm()"> 
+
+        <div class="div-nome-e-id" >
+          
+          <div class="div-nome" >
+            <label>Nome</label>
+            <input formControlName="name" class="input" type="text" placeholder="Insira o nome">
+          </div>
+
+          <div class="div-nome">
+            <label>Preço</label>
+            <input formControlName="price" class="input" type="text" placeholder="R$00,00">
+          </div>
+
+        </div>
+
+ 
+        <div class="container-categoria">
+          <div style="display: inline-grid;margin-right: 10px;">
+            <label for="cbxGrupo">Categoria</label>
+            <select formControlName="category" name="cbxGrupo" class="select">
+              <option value="-">Selecione uma Categoria</option>
+              <option value="Fitoterápico">Fitoterápico</option>
+              <option value="Alopático">Alopático</option>
+              <option value="Homeopático">Homeopático</option>
+              <option value="Similar">Similar</option>
+              <option value="Generico">Generico</option>
+              <option value="Referência">de Referência</option>
+              <option value="Manipulado">Manipulado</option>
+            </select>
+          </div>
+
+           <div style="display: inline-grid;margin-right: 10px;padding-left: 13px; ">
+            <label>Quantidade</label>
+            <input formControlName="amount" class="input" type="number" placeholder="Insira a quantidade">
+          </div> 
+        </div>
+       
+       
+       </form> 
+
+        <div style="margin-left: 30px;margin-top: 280px; margin-bottom: 10em;">
+          <button (click)="createMedicine()" class="botão">{{editing ? 'Atualizar' : 'Cadastrar'  }}</button>
+        </div>
+        <!--  -->
+  
+      </div>
+    
+    </div>
+    </body>
+  

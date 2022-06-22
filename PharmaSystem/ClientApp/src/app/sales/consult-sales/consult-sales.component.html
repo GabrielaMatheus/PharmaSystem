@@ -1,0 +1,92 @@
+<body>
+  <div class="div-principal">
+
+   <app-sidebar></app-sidebar>
+
+    <div class="div-second">
+
+     
+      <div class="div-label">
+        <div>
+           <label>PharmaSystem</label>
+        </div>        
+        <div style="margin-left: 50em;">          
+          <label> {{now}}</label>
+        </div>
+      </div>
+
+
+          <!-- conteúdo da página -->
+          <h3 class="h3-titulo">Lista Vendas</h3>
+          <label class="label-campos-obrigatorios">- Use os campos de pesquisa para filtrar os resultados.</label>
+          <br>
+          <br>
+  
+          <form class="container-form" > 
+  
+            <div class="div-nome">
+              <label>Produto</label>
+              <input  class="input" type="text" placeholder="Insira o nome do Produto">
+            </div>
+
+            <div class="div-nome"  style="display: grid;" >
+              <label>Categoria</label>
+              <select  name="cbxGrupo" class="select">
+                <option value="A">Selecione uma Categoria</option>
+                <option value="Saude">Saúde</option>
+                <option value="FuncionarioComum">Estética</option>
+                <option value="FuncionarioComum">Infantil</option>
+                <option value="Outro">Outro</option>
+              </select>
+            </div>
+  
+             
+  
+            <div style="justify-content: end; display: flex;margin-top: 26px;margin-right: 30px;" >       
+                <input type="submit" class="botãoLimpar" value="Filtrar">
+                <a [routerLink]="['/sales']"  class="botão">Vender</a>
+            </div>
+
+            <div class="div-nome" style="margin-top:1em;">
+              <label>Funcionário</label>
+              <input  class="input" type="text" placeholder="Insira o nome do Funcionário">
+            </div> 
+              
+            <div class="div-nome" style="margin-top:1em;">
+              <label>Cliente</label>
+              <input class="input" type="text" placeholder="Insira o nome do Cliente">
+            </div>
+          
+         </form>
+        <div style="display: grid; " >
+          <table class="top-table" >        
+            <tr>
+              <th>Id Produto</th>
+              <th>Id Cliente</th>
+              <th>Id Funcionário</th>
+              <th>Valor Total</th>
+            </tr>
+            <tr *ngFor="let s of listSales">
+             
+              <td>{{s.medicine}}</td>
+              <td>{{s.costumer}}</td>
+              <td>{{s.employee}}</td>
+              <td>{{s.totalValue}}</td>
+            </tr>
+           
+          </table>
+  
+          <!-- Div pra dar o tamanho da tela  -->
+          <div style="margin-bottom: 30em;"></div>
+          
+        </div>           
+        </div>
+  
+        
+        
+        <!--  -->
+    
+  
+      </div>
+    </body>
+  

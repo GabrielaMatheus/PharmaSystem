@@ -1,0 +1,64 @@
+.titulo{
+    margin-left: 36px;
+    }
+    .h1{
+    font-weight: bold;
+    }
+    .container-dados{
+    background-color: white;
+    margin-top: 50px;
+    height: 350px;
+    padding-left: 36px;
+    padding-top: 30px;
+    }
+    .div-estilo{
+    width: 390px;
+    border: 1px solid rgba(190, 186, 186, 0.918);
+    height: 150px;
+    margin-right: 90px;
+    }
+    .div-estilo-1 {
+    text-align: center;
+    width: 390px;
+    border: 1px solid green;
+    height: 94px;
+    margin-right: 90px;
+    background-color: white;
+    }
+    .div-estilo-2 {
+    text-align: center;
+    width: 390px;
+    border: 1px solid rgb(213, 216, 52);
+    height: 94px;
+    margin-right: 90px;
+    background-color: white;
+    }
+    .h1-estilo-1{
+    font-size: 1.5rem;font-weight: bold;line-height: 20px;margin-top: 10px;
+    }
+    .div-funcionario{
+    width: 390px;
+    border: 2px solid red;
+    height: 100px;
+    }
+    .paragrafo-dinheiro{
+    height: 25px;
+    color: black;
+    border-left: solid 1px rgb(211, 187, 49);
+    border-right: solid 1px rgb(205, 216, 46);
+    border-top: solid 1px rgb(211, 187, 49);
+    margin-left: -1px;margin-right: -1px;
+    background-color: rgb(247, 231, 86);
+    border-bottom: solid 1px rgb(211, 187, 49);
+    }
+    .paragrafo{
+    height: 25px;
+    color: black;
+    border-left: solid 1px green;
+    border-right: solid 1px green;
+    border-top: solid 1px green;
+    margin-left: -1px;margin-right: -1px;
+    background-color: rgb(108, 206, 108);
+    border-bottom: solid 1px green;
+    }
+    

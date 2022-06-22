@@ -1,0 +1,21 @@
+.modal {
+    font-weight: bold;
+    text-align: center;
+    background: green;
+    color: #ffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #333;
+    min-width: 320px;
+    position: fixed;
+    left: 35%;
+    padding: 24px;
+    top: 50%;
+    -webkit-transform: scale(0.95);
+    -o-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+}
+.button{
+    width: 30%;
+    height: 30%;
+}

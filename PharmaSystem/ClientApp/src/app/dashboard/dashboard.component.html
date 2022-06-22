@@ -1,0 +1,109 @@
+<body>
+  <div class="div-principal">
+  
+  <app-sidebar></app-sidebar>
+  
+  <div class="div-second">
+  
+  <div class="div-label">
+    <div>
+  <label>PHARMASYSTEM</label>
+</div>
+  
+  <div style="margin-left: 50em;">          
+    <label> {{now}}</label>
+  </div>
+</div>
+
+  <div>
+  <div class="titulo">
+  <div style="display: flex;">
+  <div>
+  <h1 class="h1">Dashboard</h1>
+  <p>- Relatório do estado da sua farmácia.</p>
+  </div>
+  </div>
+  <br>
+  <div style="display: flex;margin-bottom: 20px; justify-content: center;">
+  <div class="div-estilo-1">
+  <h1 class="h1-estilo-1">BOM</h1>
+  <p style="height:13px;">Status de Estoque</p>
+  <a [routerLink]="['/sales/consult-sales']" ><p class="paragrafo"> Ir para a Tela >></p></a>
+  </div>
+  <div class="div-estilo-2">
+  <h1 class="h1-estilo-1">R$200,00</h1>
+  <p style="height:13px;">Movimentação atual</p>
+  <a [routerLink]="['/medicine/consult-medicine']" ><p class="paragrafo-dinheiro"> Ir para a Tela >></p></a>
+  </div>
+  </div>
+  
+  </div>
+  </div>
+  
+  <div class="container-dados">
+  
+  <div style="display: flex;margin-bottom: 20px;justify-content: center;">
+  
+  <div class="div-estilo">
+  <div style="border-bottom: solid 1px rgb(185, 177, 177);display: flex;">
+  <div style="margin-left: 20px;">
+  <p style="margin-top: 10px;height: 10px;font-weight: bold;">Estoque</p>
+  </div>
+  <div style="margin-left: 180px;">
+  <p style="margin-top: 10px;height: 10px; text-align: end;">Ir para a tela >></p>
+  </div>
+  </div>
+  <h1 style="margin-left: 20px;margin-top: 20px;font-size: 28px;font-weight: bold;">298</h1>
+  <p style="margin-left: 20px;font-weight: bold;">Total de medicamentos em estoque</p>
+  </div>
+  
+  <div class="div-estilo">
+  <div style="border-bottom: solid 1px rgb(185, 177, 177);display: flex;">
+  <div style="margin-left: 20px;">
+  <p style="margin-top: 10px;height: 10px;font-weight: bold;">Vendas</p>
+  </div>
+  <div style="margin-left: 210px;">
+  <p style="margin-top: 10px;height: 10px; text-align: end;">Ir para a tela>></p>
+  </div>
+  </div>
+  <h1 style="margin-left: 20px;margin-top: 20px;font-size: 28px;font-weight: bold;">16</h1>
+  <p style="margin-left: 20px;font-weight: bold;">Vendas realizadas hoje</p>
+  </div>
+  
+  </div>
+  
+  <div style="display: flex;justify-content: center;">
+  <div class="div-estilo">
+  <div style="border-bottom: solid 1px rgb(185, 177, 177);display: flex;">
+  <div style="margin-left: 20px;">
+  <p style="margin-top: 10px;height: 10px;font-weight: bold;">Cadastros</p>
+  </div>
+  <div style="margin-left: 170px;">
+  <p style="margin-top: 10px;height: 10px; text-align: end;">Ir para a tela >></p>
+  </div>
+  </div>
+  <h1 style="margin-left: 20px;margin-top: 20px;font-size: 28px;font-weight: bold;">04</h1>
+  <p style="margin-left: 20px;font-weight: bold;">Clientes cadastrados</p>
+  </div>
+  <div class="div-estilo">
+  <div style="border-bottom: solid 1px rgb(185, 177, 177);display: flex;">
+  <div style="margin-left: 20px;">
+  <p style="margin-top: 10px;height: 10px;font-weight: bold;">Funcionários</p>
+  </div>
+  <div style="margin-left: 150px; ">
+  <p style="margin-top: 10px;height: 10px; text-align: end;">Ir para a tela >></p>
+  </div>
+  </div>
+  <h1 style="margin-left: 20px;margin-top: 20px;font-size: 28px;font-weight: bold;">7</h1>
+  <p style="margin-left: 20px;font-weight: bold;">Funcionários Cadastrados</p>
+  </div>
+  </div>
+  
+  </div>
+  
+  <div style="margin-bottom:100px"></div>
+  </div>
+  </div>
+  </body>
+  
+  

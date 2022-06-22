@@ -1,0 +1,28 @@
+
+
+.h3-titulo{
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+.label-campos-obrigatorios{
+    margin-left: 30px;
+}
+
+.div-nome-e-id{
+    display: -webkit-box;
+    margin-left: 30px;
+}
+
+.div-id{
+    display: inline-grid;
+    padding-right: 13px;
+    
+}
+
+.div-nome{
+    display: inline-grid;
+    margin-right: 10px;
+    padding-right: 13px;
+}
+

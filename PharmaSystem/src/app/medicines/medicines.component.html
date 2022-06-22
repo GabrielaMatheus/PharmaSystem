@@ -1,0 +1,82 @@
+<body>
+  <div class="div-principal">
+
+   <app-sidebar></app-sidebar>
+
+    <div class="div-second">
+
+      
+      <div class="div-label">
+        <div>
+           <label>PharmaSystem</label>
+        </div>        
+        <div style="margin-left: 50em;">          
+          <label> {{now}}</label>
+        </div>
+      </div>
+
+        <!-- conteúdo da página -->
+        <h3 class="h3-titulo">Cadastrar Medicamento</h3>
+        <label class="label-campos-obrigatorios">-Todos os campos são obrigatórios.</label>
+        <br>
+        <br>
+        <form [formGroup]="MedicineForm"> 
+
+        <div class="div-nome-e-id" >
+          
+          <div class="div-nome" >
+            <label>Nome</label>
+            <input formControlName="name" class="input" type="text" placeholder="Insira o nome">
+          </div>
+
+          <div class="div-nome">
+            <label>Preço</label>
+            <input formControlName="price" class="input" type="text" placeholder="R$00,00">
+          </div>
+
+        </div>
+
+ 
+        <div class="container-categoria">
+          <div style="display: inline-grid;margin-right: 10px;">
+            <label for="cbxGrupo">Categoria</label>
+            <select formControlName="category" name="cbxGrupo" class="select">
+              <option value="A">Selecione uma Categoria</option>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="-">Other</option>
+            </select>
+          </div>
+
+          <div style="display: inline-grid;margin-right: 10px;padding-left: 13px;">
+            <label>Quantidade</label>
+            <input formControlName="quantity" class="input" type="number" placeholder="Insira a quantidade">
+          </div>
+        </div>
+
+
+
+        <div style="margin-left: 30px;margin-top: 13px;padding-right: 13px;">
+          <label for="efeitosColarerais">Como Usar</label>
+          <br>
+          <textarea formControlName="howToUse" class="textarea" name="efeitosColarerais"></textarea>
+        </div>
+
+        <div style="margin-left: 30px;margin-top: 13px;padding-right: 13px;  margin-bottom:65px;">
+          <label for="efeitosColarerais">Efeitos Colaterais</label>
+          <br>
+          <textarea formControlName="sideEffects" class="textarea" name="efeitosColarerais"></textarea>
+        </div>
+       
+       </form> 
+
+        <div style="margin-left: 30px;margin-top: 13px; margin-bottom: 10em;">
+          <input   type="submit" class="botão" value="Salvar">
+        </div>
+        <!--  -->
+  
+      </div>
+    
+    </div>
+    </body>
+  

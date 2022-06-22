@@ -1,0 +1,208 @@
+body, html{
+  height: 100%;
+  width:100%;
+}
+
+.relative-parent{
+  background-color: aquamarine;
+}
+.top{
+  background-color:  brown;
+  width: 20px;
+}
+.relative{
+  background-color: blueviolet;
+  height: 100px;
+  width: 300px;
+  position: relative;
+}
+.botão{
+  background-color: #24c285;
+  padding: 9px 57px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  
+  font-size: large  ;
+  
+  
+}
+
+.botão:hover{
+  text-decoration: none;
+  color:white;
+  background-color: #57c59b;
+}
+
+.botãoLimpar{
+  background-color:rgb(0, 213, 255);
+  padding: 9px 57px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  margin-right: 15px;
+  font-size: large  ;
+}
+.botãoLimpar:hover{
+  background-color:rgb(83, 224, 253);
+}
+
+.botãoAdicionar{
+  background-color:rgb(35, 87, 244);
+  padding: 9px 57px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  margin-right: 15px;
+  font-size: large  ;
+}
+.botãoAdicionar:hover{
+  background-color:rgb(62, 108, 247);
+}
+
+
+
+.label{
+  margin-bottom: 0;
+  font-family: 'Poppins';
+  size: 14px;
+}
+.input{
+  border-radius: 4px;
+  background-color: #E3EBF3;
+  border: 1.5px solid #b8babe96;
+  font-size: 1em;
+  width:18em;
+  height:2.5em;
+}
+.input-2-columns{
+  border-radius: 4px;
+  background-color: #E3EBF3;
+  border: 1.5px solid #b8babe96;
+  width:37em;
+  height:2.5em;
+}
+.select{
+  border-radius: 4px;
+  background-color: #E3EBF3;
+  border: 1.5px solid #b8babe96;
+  width:18em;
+  height:2.5em;
+}
+
+.textarea{
+  border-radius: 4px;
+  background-color: #E3EBF3;
+  border: 1.5px solid #b8babe96;
+  width: 37em;
+  height:6em;
+}
+
+/* Estilisações das divs comuns das telas (antes do Conteúdo da Pagina) */
+
+.div-label{
+  display: flex;
+  margin-bottom: 20px;
+  background-color: white;
+  border-bottom: 2px solid #b8babe96;
+  border-right: 2px solid #b8babe96;
+  border-top: 2px solid #b8babe96;
+}
+
+.div-label label{
+  padding: 10px;
+  width: 115px; 
+  height: 24px; 
+  top: 18px; 
+  left: 308px;
+  margin-left: 36px;
+  margin-bottom: 20px;
+}
+
+.div-principal{
+  display: -webkit-box;
+
+}
+
+.div-second{
+  background-color: #EDF1F5; 
+
+  border-bottom: 2px solid #b8babe96;
+  width: 100%;
+}
+
+/* Estilização das telas de consulta */
+.h3-titulo{
+  margin-left: 30px;
+  font-weight: bold;
+}
+
+.label-campos-obrigatorios{
+  margin-left: 30px;
+}
+
+.div-nome-e-id{
+  display: -webkit-box;
+  margin-left: 30px;
+}
+
+.div-id{
+  display: inline-grid;
+  padding-right: 13px;
+  
+}
+
+.div-nome{
+  display: grid;
+  padding-right: 13px;
+  margin-left: 30px;
+}
+
+.container-form{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+/* Estilização da Tabela */
+
+.top-table{
+margin-top: 60px;
+margin-left: 30px;
+margin-right: 30px;
+
+}
+
+
+
+.top-table td, .top-table th {
+border: 1px solid #ddd;
+padding: 8px;
+}
+
+.top-table tr:nth-child(even){background-color: #f2f2f2;}
+
+.top-table tr:hover {background-color: #ddd;}
+
+.top-table th {
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: left;
+background-color: #d5dbde;
+
+
+}
+
+/* Icones de editar e consultar */
+.top-table a{
+  text-align: center;
+  display: block;
+  color: rgb(91, 89, 89);
+}
